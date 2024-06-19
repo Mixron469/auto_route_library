@@ -1,7 +1,9 @@
 name: auto_route_generator
 description: AutoRoute is a declarative routing solution, where everything needed for navigation is automatically generated for you.
 version: 8.0.0
-homepage: https://github.com/Milad-Akarie/auto_route_library
+publish_to: none
+
+homepage: https://github.com/Mixron469/auto_route_library
 environment:
   sdk: ">=3.3.0 <4.0.0"
 executables:
@@ -19,7 +21,10 @@ dependencies:
   args: ^2.3.1
   glob: ^2.0.1
   package_config: ^2.1.0
-  auto_route: ^8.0.0
+  auto_route:
+    git:
+      url: https://github.com/Mixron469/auto_route_library.git
+      path: auto_route
 
 dev_dependencies:
   lints: ^3.0.0
